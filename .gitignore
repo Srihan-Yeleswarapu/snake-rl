@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# snake-rl — gitignore
+# ---------------------------------------------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Virtual environments (uv / venv / conda)
+.venv/
+venv/
+env/
+envs/
+.python-version
+.uv/
+
+# PyTorch / model artifacts (train, don't commit)
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Experiment tracking & data (regenerate, don't commit)
+logs/
+runs/
+experiments/
+*.db
+*.sqlite
+*.sqlite3
+results/
+*.csv
+*.npz
+
+# Dashboard runtime
+dashboard/static/*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Coverage / test
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# WandB / experiment loggers (if added later)
+wandb/
+mlruns/
